@@ -59,11 +59,11 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Sidebar_demo.cs">
+    <Compile Include="HR_ui_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sidebar_demo.Designer.cs">
-      <DependentUpon>Sidebar_demo.cs</DependentUpon>
+    <Compile Include="HR_ui_Main.Designer.cs">
+      <DependentUpon>HR_ui_Main.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -78,8 +78,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Sidebar_demo.resx">
-      <DependentUpon>Sidebar_demo.cs</DependentUpon>
+    <EmbeddedResource Include="HR_ui_Main.resx">
+      <DependentUpon>HR_ui_Main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +111,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Viec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bao_cao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CongDong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongKe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
