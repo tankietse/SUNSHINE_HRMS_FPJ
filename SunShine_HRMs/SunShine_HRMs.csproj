@@ -65,6 +65,9 @@
     <Compile Include="HR_ui_Main.Designer.cs">
       <DependentUpon>HR_ui_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoundPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +138,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorThongBao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

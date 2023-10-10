@@ -13,7 +13,8 @@ namespace SunShine_HRMs
     public partial class HR_ui_Main : Form
     {
 
-        bool SidebarExpand = false;
+        bool SidebarExpand;
+        bool HomeCollapsed;
         public HR_ui_Main()
         {
             InitializeComponent();
@@ -24,12 +25,13 @@ namespace SunShine_HRMs
         {
             if (SidebarExpand)
             {
-                Sidebar.Width -= 2;
-                if (Sidebar.Width <= 60)
+                pnlSidebar.Width -= 2;
+                //if (pnlSidebar.Width == pnlSidebar.MinimumSize.Width)   
+                if (pnlSidebar.Width <= 60)
                 {
                     SidebarExpand = false;
-                    SidebarTransition.Stop();
-                    
+                    SidebarTransitionTimer.Stop();
+
                     //btnDashboard.Width = Sidebar.Width;
                     //btnBaoCao.Width = Sidebar.Width;
                     //btnCongDong.Width = Sidebar.Width;
@@ -42,15 +44,15 @@ namespace SunShine_HRMs
 
                 lblCaiDat.Visible = false;
                 lblMainMenu.Visible = false;
-                lblMode.Visible = false;
             }
             else
             {
-                Sidebar.Width += 2;
-                if (Sidebar.Width >= 183)
+                pnlSidebar.Width += 2;
+                //if (pnlSidebar.Width == pnlSidebar.MaximumSize.Width)
+                if (pnlSidebar.Width >= 183)
                 {
                     SidebarExpand = true;
-                    SidebarTransition.Stop();
+                    SidebarTransitionTimer.Stop();
 
                     //btnDashboard.Width = Sidebar.Width;
                     //btnBaoCao.Width = Sidebar.Width;
@@ -63,13 +65,39 @@ namespace SunShine_HRMs
                 }
                 lblCaiDat.Visible = true;
                 lblMainMenu.Visible = true;
-                lblMode.Visible = true;
             }
         }
 
+        private void TaiKhoanTimer_Tick(object sender, EventArgs e)
+        {
+            if (HomeCollapsed)
+            {
+                pnlTaiKhoan.Height -= 2;
+                if (pnlTaiKhoan.Height <= 54)
+                {
+                    HomeCollapsed = false;
+                    TaiKhoanTimer.Stop();
+                }
+
+            }
+            else
+            {
+                pnlTaiKhoan.Height += 2;
+                if (pnlTaiKhoan.Height >= 179)
+                {
+                    HomeCollapsed = true;
+                    TaiKhoanTimer.Stop();
+                }
+            }
+        }
         private void btnHam_Click(object sender, EventArgs e)
         {
-            SidebarTransition.Start();
+            SidebarTransitionTimer.Start();
+        }
+
+        private void btnXemTacVuKhac_Click(object sender, EventArgs e)
+        {
+            TaiKhoanTimer.Start();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)

@@ -29,70 +29,92 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HR_ui_Main));
+            this.pnlThanhTimKiem = new System.Windows.Forms.Panel();
+            this.btnHam = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHRMs = new System.Windows.Forms.Label();
             this.lblSunshine = new System.Windows.Forms.Label();
-            this.pnMode = new System.Windows.Forms.Panel();
-            this.lblMode = new System.Windows.Forms.Label();
-            this.pnCaiDat = new System.Windows.Forms.Panel();
+            this.pnlCaiDat = new System.Windows.Forms.Panel();
             this.lblCaiDat = new System.Windows.Forms.Label();
-            this.pnMainMenu = new System.Windows.Forms.Panel();
-            this.lblMainMenu = new System.Windows.Forms.Label();
-            this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.SidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.pnNen = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnTuyendung = new System.Windows.Forms.Button();
-            this.btnLich = new System.Windows.Forms.Button();
-            this.btnThongKe = new System.Windows.Forms.Button();
-            this.btnBaoCao = new System.Windows.Forms.Button();
-            this.btnCongDong = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnHam = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMainMenu = new System.Windows.Forms.Panel();
+            this.lblMainMenu = new System.Windows.Forms.Label();
+            this.pnlSidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnTuyendung = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLich = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btnBaoCao = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.btnCongDong = new System.Windows.Forms.Button();
+            this.SidebarTransitionTimer = new System.Windows.Forms.Timer(this.components);
+            this.pnNen = new System.Windows.Forms.Panel();
+            this.pnlHienThi = new System.Windows.Forms.Panel();
+            this.pnlTaiKhoan = new System.Windows.Forms.Panel();
+            this.pnlShowTaiKhoan = new System.Windows.Forms.Panel();
+            this.btnXemTacVuKhac = new System.Windows.Forms.Button();
+            this.roundPicture1 = new SunShine_HRMs.RoundPicture();
+            this.btnThongBao = new System.Windows.Forms.Button();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.lblUername = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pnlTenForm = new System.Windows.Forms.Panel();
+            this.lblTenForm = new System.Windows.Forms.Label();
+            this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
+            this.pnlThanhTimKiem.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnMode.SuspendLayout();
-            this.pnCaiDat.SuspendLayout();
-            this.pnMainMenu.SuspendLayout();
-            this.Sidebar.SuspendLayout();
-            this.pnNen.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlCaiDat.SuspendLayout();
+            this.pnlMainMenu.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.pnNen.SuspendLayout();
+            this.pnlHienThi.SuspendLayout();
+            this.pnlTaiKhoan.SuspendLayout();
+            this.pnlShowTaiKhoan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).BeginInit();
+            this.pnlTenForm.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlThanhTimKiem
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.btnHam);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1904, 54);
-            this.panel1.TabIndex = 0;
+            this.pnlThanhTimKiem.BackColor = System.Drawing.Color.White;
+            this.pnlThanhTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlThanhTimKiem.Controls.Add(this.btnHam);
+            this.pnlThanhTimKiem.Controls.Add(this.panel2);
+            this.pnlThanhTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlThanhTimKiem.Location = new System.Drawing.Point(0, 0);
+            this.pnlThanhTimKiem.Name = "pnlThanhTimKiem";
+            this.pnlThanhTimKiem.Size = new System.Drawing.Size(1904, 56);
+            this.pnlThanhTimKiem.TabIndex = 0;
+            // 
+            // btnHam
+            // 
+            this.btnHam.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHam.FlatAppearance.BorderSize = 0;
+            this.btnHam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHam.Image = global::SunShine_HRMs.Properties.Resources.menu24;
+            this.btnHam.Location = new System.Drawing.Point(154, 11);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(28, 33);
+            this.btnHam.TabIndex = 3;
+            this.btnHam.UseVisualStyleBackColor = true;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // panel2
             // 
@@ -103,6 +125,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(156, 40);
             this.panel2.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SunShine_HRMs.Properties.Resources.sun64;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblHRMs
             // 
@@ -125,32 +157,14 @@
             this.lblSunshine.TabIndex = 1;
             this.lblSunshine.Text = "Sunshine";
             // 
-            // pnMode
+            // pnlCaiDat
             // 
-            this.pnMode.Controls.Add(this.lblMode);
-            this.pnMode.Location = new System.Drawing.Point(3, 326);
-            this.pnMode.Name = "pnMode";
-            this.pnMode.Size = new System.Drawing.Size(180, 52);
-            this.pnMode.TabIndex = 2;
-            // 
-            // lblMode
-            // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.Location = new System.Drawing.Point(-3, 0);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(45, 18);
-            this.lblMode.TabIndex = 1;
-            this.lblMode.Text = "Mode";
-            // 
-            // pnCaiDat
-            // 
-            this.pnCaiDat.Controls.Add(this.lblCaiDat);
-            this.pnCaiDat.Controls.Add(this.button6);
-            this.pnCaiDat.Location = new System.Drawing.Point(3, 266);
-            this.pnCaiDat.Name = "pnCaiDat";
-            this.pnCaiDat.Size = new System.Drawing.Size(180, 54);
-            this.pnCaiDat.TabIndex = 1;
+            this.pnlCaiDat.Controls.Add(this.lblCaiDat);
+            this.pnlCaiDat.Controls.Add(this.button6);
+            this.pnlCaiDat.Location = new System.Drawing.Point(3, 259);
+            this.pnlCaiDat.Name = "pnlCaiDat";
+            this.pnlCaiDat.Size = new System.Drawing.Size(180, 54);
+            this.pnlCaiDat.TabIndex = 1;
             // 
             // lblCaiDat
             // 
@@ -162,89 +176,68 @@
             this.lblCaiDat.TabIndex = 1;
             this.lblCaiDat.Text = "Cài đặt";
             // 
-            // pnMainMenu
+            // button6
             // 
-            this.pnMainMenu.Controls.Add(this.lblMainMenu);
-            this.pnMainMenu.Location = new System.Drawing.Point(3, 3);
-            this.pnMainMenu.Name = "pnMainMenu";
-            this.pnMainMenu.Size = new System.Drawing.Size(180, 35);
-            this.pnMainMenu.TabIndex = 2;
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Image = global::SunShine_HRMs.Properties.Resources.logout;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(10, 21);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(170, 31);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Đăng xuất";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // pnlMainMenu
+            // 
+            this.pnlMainMenu.Controls.Add(this.lblMainMenu);
+            this.pnlMainMenu.Location = new System.Drawing.Point(3, 3);
+            this.pnlMainMenu.Name = "pnlMainMenu";
+            this.pnlMainMenu.Size = new System.Drawing.Size(180, 28);
+            this.pnlMainMenu.TabIndex = 2;
             // 
             // lblMainMenu
             // 
             this.lblMainMenu.AutoSize = true;
             this.lblMainMenu.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainMenu.Location = new System.Drawing.Point(-1, 10);
+            this.lblMainMenu.Location = new System.Drawing.Point(3, 14);
             this.lblMainMenu.Name = "lblMainMenu";
             this.lblMainMenu.Size = new System.Drawing.Size(82, 18);
             this.lblMainMenu.TabIndex = 1;
             this.lblMainMenu.Text = "Main menu";
             // 
-            // Sidebar
+            // pnlSidebar
             // 
-            this.Sidebar.BackColor = System.Drawing.Color.White;
-            this.Sidebar.Controls.Add(this.pnMainMenu);
-            this.Sidebar.Controls.Add(this.panel5);
-            this.Sidebar.Controls.Add(this.panel6);
-            this.Sidebar.Controls.Add(this.panel7);
-            this.Sidebar.Controls.Add(this.panel8);
-            this.Sidebar.Controls.Add(this.panel9);
-            this.Sidebar.Controls.Add(this.panel10);
-            this.Sidebar.Controls.Add(this.pnCaiDat);
-            this.Sidebar.Controls.Add(this.pnMode);
-            this.Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Sidebar.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sidebar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Sidebar.Location = new System.Drawing.Point(0, 54);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(183, 987);
-            this.Sidebar.TabIndex = 1;
+            this.pnlSidebar.BackColor = System.Drawing.Color.White;
+            this.pnlSidebar.Controls.Add(this.pnlMainMenu);
+            this.pnlSidebar.Controls.Add(this.panel5);
+            this.pnlSidebar.Controls.Add(this.panel6);
+            this.pnlSidebar.Controls.Add(this.panel7);
+            this.pnlSidebar.Controls.Add(this.panel8);
+            this.pnlSidebar.Controls.Add(this.panel9);
+            this.pnlSidebar.Controls.Add(this.panel10);
+            this.pnlSidebar.Controls.Add(this.pnlCaiDat);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.pnlSidebar.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlSidebar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 56);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(183, 985);
+            this.pnlSidebar.TabIndex = 1;
             // 
-            // SidebarTransition
+            // panel5
             // 
-            this.SidebarTransition.Enabled = true;
-            this.SidebarTransition.Interval = 3;
-            this.SidebarTransition.Tick += new System.EventHandler(this.SidebarTransition_Tick);
-            // 
-            // pnNen
-            // 
-            this.pnNen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
-            this.pnNen.Controls.Add(this.panel11);
-            this.pnNen.Controls.Add(this.panel3);
-            this.pnNen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnNen.Location = new System.Drawing.Point(183, 54);
-            this.pnNen.Name = "pnNen";
-            this.pnNen.Size = new System.Drawing.Size(1721, 987);
-            this.pnNen.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1721, 40);
-            this.panel3.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Main menu";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1754, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(148, 52);
-            this.panel4.TabIndex = 4;
+            this.panel5.Controls.Add(this.btnDashboard);
+            this.panel5.Location = new System.Drawing.Point(3, 37);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(180, 31);
+            this.panel5.TabIndex = 3;
             // 
             // btnDashboard
             // 
@@ -264,6 +257,14 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnTuyendung);
+            this.panel6.Location = new System.Drawing.Point(3, 74);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(180, 31);
+            this.panel6.TabIndex = 3;
+            // 
             // btnTuyendung
             // 
             this.btnTuyendung.BackColor = System.Drawing.Color.White;
@@ -281,6 +282,14 @@
             this.btnTuyendung.Text = "Tuyển dụng";
             this.btnTuyendung.UseVisualStyleBackColor = false;
             this.btnTuyendung.Click += new System.EventHandler(this.btnTuyendung_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnLich);
+            this.panel7.Location = new System.Drawing.Point(3, 111);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(180, 31);
+            this.panel7.TabIndex = 3;
             // 
             // btnLich
             // 
@@ -300,6 +309,14 @@
             this.btnLich.UseVisualStyleBackColor = false;
             this.btnLich.Click += new System.EventHandler(this.btnLich_Click);
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnThongKe);
+            this.panel8.Location = new System.Drawing.Point(3, 148);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(180, 31);
+            this.panel8.TabIndex = 3;
+            // 
             // btnThongKe
             // 
             this.btnThongKe.BackColor = System.Drawing.Color.White;
@@ -317,6 +334,14 @@
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btnBaoCao);
+            this.panel9.Location = new System.Drawing.Point(3, 185);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(180, 31);
+            this.panel9.TabIndex = 3;
             // 
             // btnBaoCao
             // 
@@ -336,6 +361,14 @@
             this.btnBaoCao.UseVisualStyleBackColor = false;
             this.btnBaoCao.Click += new System.EventHandler(this.button3_Click);
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.btnCongDong);
+            this.panel10.Location = new System.Drawing.Point(3, 222);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(180, 31);
+            this.panel10.TabIndex = 3;
+            // 
             // btnCongDong
             // 
             this.btnCongDong.BackColor = System.Drawing.Color.White;
@@ -354,169 +387,262 @@
             this.btnCongDong.UseVisualStyleBackColor = false;
             this.btnCongDong.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button6
+            // SidebarTransitionTimer
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Image = global::SunShine_HRMs.Properties.Resources.logout;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(10, 21);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 31);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Dashboard";
-            this.button6.UseVisualStyleBackColor = false;
+            this.SidebarTransitionTimer.Enabled = true;
+            this.SidebarTransitionTimer.Interval = 3;
+            this.SidebarTransitionTimer.Tick += new System.EventHandler(this.SidebarTransition_Tick);
             // 
-            // pictureBox2
+            // pnNen
             // 
-            this.pictureBox2.Image = global::SunShine_HRMs.Properties.Resources.Vector;
-            this.pictureBox2.Location = new System.Drawing.Point(129, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pnNen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
+            this.pnNen.Controls.Add(this.pnlHienThi);
+            this.pnNen.Controls.Add(this.pnlTenForm);
+            this.pnNen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnNen.Location = new System.Drawing.Point(183, 56);
+            this.pnNen.Name = "pnNen";
+            this.pnNen.Size = new System.Drawing.Size(1721, 985);
+            this.pnNen.TabIndex = 2;
             // 
-            // btnHam
+            // pnlHienThi
             // 
-            this.btnHam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHam.FlatAppearance.BorderSize = 0;
-            this.btnHam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHam.Image = global::SunShine_HRMs.Properties.Resources.menu24;
-            this.btnHam.Location = new System.Drawing.Point(154, 11);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(28, 33);
-            this.btnHam.TabIndex = 3;
-            this.btnHam.UseVisualStyleBackColor = true;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
+            this.pnlHienThi.Controls.Add(this.pnlTaiKhoan);
+            this.pnlHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlHienThi.Location = new System.Drawing.Point(0, 40);
+            this.pnlHienThi.Name = "pnlHienThi";
+            this.pnlHienThi.Size = new System.Drawing.Size(1721, 945);
+            this.pnlHienThi.TabIndex = 1;
             // 
-            // pictureBox1
+            // pnlTaiKhoan
             // 
-            this.pictureBox1.Image = global::SunShine_HRMs.Properties.Resources.sun64;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pnlTaiKhoan.Controls.Add(this.pnlShowTaiKhoan);
+            this.pnlTaiKhoan.Controls.Add(this.button4);
+            this.pnlTaiKhoan.Controls.Add(this.button3);
+            this.pnlTaiKhoan.Controls.Add(this.button2);
+            this.pnlTaiKhoan.Controls.Add(this.button1);
+            this.pnlTaiKhoan.Location = new System.Drawing.Point(1541, 0);
+            this.pnlTaiKhoan.Name = "pnlTaiKhoan";
+            this.pnlTaiKhoan.Size = new System.Drawing.Size(180, 179);
+            this.pnlTaiKhoan.TabIndex = 6;
             // 
-            // panel5
+            // pnlShowTaiKhoan
             // 
-            this.panel5.Controls.Add(this.btnDashboard);
-            this.panel5.Location = new System.Drawing.Point(3, 44);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(180, 31);
-            this.panel5.TabIndex = 3;
+            this.pnlShowTaiKhoan.Controls.Add(this.btnXemTacVuKhac);
+            this.pnlShowTaiKhoan.Controls.Add(this.roundPicture1);
+            this.pnlShowTaiKhoan.Controls.Add(this.btnThongBao);
+            this.pnlShowTaiKhoan.Controls.Add(this.lblChucVu);
+            this.pnlShowTaiKhoan.Controls.Add(this.lblUername);
+            this.pnlShowTaiKhoan.Location = new System.Drawing.Point(0, 0);
+            this.pnlShowTaiKhoan.Name = "pnlShowTaiKhoan";
+            this.pnlShowTaiKhoan.Size = new System.Drawing.Size(181, 54);
+            this.pnlShowTaiKhoan.TabIndex = 4;
             // 
-            // panel6
+            // btnXemTacVuKhac
             // 
-            this.panel6.Controls.Add(this.btnTuyendung);
-            this.panel6.Location = new System.Drawing.Point(3, 81);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(180, 31);
-            this.panel6.TabIndex = 3;
+            this.btnXemTacVuKhac.BackgroundImage = global::SunShine_HRMs.Properties.Resources.Vector;
+            this.btnXemTacVuKhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnXemTacVuKhac.FlatAppearance.BorderSize = 0;
+            this.btnXemTacVuKhac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemTacVuKhac.Location = new System.Drawing.Point(153, 14);
+            this.btnXemTacVuKhac.Name = "btnXemTacVuKhac";
+            this.btnXemTacVuKhac.Size = new System.Drawing.Size(27, 27);
+            this.btnXemTacVuKhac.TabIndex = 3;
+            this.btnXemTacVuKhac.UseVisualStyleBackColor = true;
+            this.btnXemTacVuKhac.Click += new System.EventHandler(this.btnXemTacVuKhac_Click);
             // 
-            // panel7
+            // roundPicture1
             // 
-            this.panel7.Controls.Add(this.btnLich);
-            this.panel7.Location = new System.Drawing.Point(3, 118);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(180, 31);
-            this.panel7.TabIndex = 3;
+            this.roundPicture1.Image = ((System.Drawing.Image)(resources.GetObject("roundPicture1.Image")));
+            this.roundPicture1.Location = new System.Drawing.Point(37, 11);
+            this.roundPicture1.Name = "roundPicture1";
+            this.roundPicture1.Size = new System.Drawing.Size(36, 36);
+            this.roundPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundPicture1.TabIndex = 0;
+            this.roundPicture1.TabStop = false;
             // 
-            // panel8
+            // btnThongBao
             // 
-            this.panel8.Controls.Add(this.btnThongKe);
-            this.panel8.Location = new System.Drawing.Point(3, 155);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(180, 31);
-            this.panel8.TabIndex = 3;
+            this.btnThongBao.BackgroundImage = global::SunShine_HRMs.Properties.Resources.VectorThongBao;
+            this.btnThongBao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThongBao.FlatAppearance.BorderSize = 0;
+            this.btnThongBao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongBao.Location = new System.Drawing.Point(3, 16);
+            this.btnThongBao.Name = "btnThongBao";
+            this.btnThongBao.Size = new System.Drawing.Size(23, 25);
+            this.btnThongBao.TabIndex = 2;
+            this.btnThongBao.UseVisualStyleBackColor = true;
             // 
-            // panel9
+            // lblChucVu
             // 
-            this.panel9.Controls.Add(this.btnBaoCao);
-            this.panel9.Location = new System.Drawing.Point(3, 192);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(180, 31);
-            this.panel9.TabIndex = 3;
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblChucVu.Location = new System.Drawing.Point(79, 32);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(44, 15);
+            this.lblChucVu.TabIndex = 1;
+            this.lblChucVu.Text = "Admin";
             // 
-            // panel10
+            // lblUername
             // 
-            this.panel10.Controls.Add(this.btnCongDong);
-            this.panel10.Location = new System.Drawing.Point(3, 229);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(180, 31);
-            this.panel10.TabIndex = 3;
+            this.lblUername.AutoSize = true;
+            this.lblUername.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUername.Location = new System.Drawing.Point(79, 14);
+            this.lblUername.Name = "lblUername";
+            this.lblUername.Size = new System.Drawing.Size(61, 15);
+            this.lblUername.TabIndex = 1;
+            this.lblUername.Text = "Tấn Kiệt";
             // 
-            // panel11
+            // button4
             // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 40);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1721, 947);
-            this.panel11.TabIndex = 1;
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button4.Image = global::SunShine_HRMs.Properties.Resources.button;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(1, 146);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(179, 31);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Lưu  và thoát";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Sidebar_demo
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.Image = global::SunShine_HRMs.Properties.Resources.Password;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1, 114);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(179, 31);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Đổi mật khẩu";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(1, 82);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(179, 31);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Profile";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Tài khoản";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pnlTenForm
+            // 
+            this.pnlTenForm.Controls.Add(this.lblTenForm);
+            this.pnlTenForm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTenForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlTenForm.Name = "pnlTenForm";
+            this.pnlTenForm.Size = new System.Drawing.Size(1721, 40);
+            this.pnlTenForm.TabIndex = 0;
+            // 
+            // lblTenForm
+            // 
+            this.lblTenForm.AutoSize = true;
+            this.lblTenForm.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenForm.Location = new System.Drawing.Point(3, 15);
+            this.lblTenForm.Name = "lblTenForm";
+            this.lblTenForm.Size = new System.Drawing.Size(100, 23);
+            this.lblTenForm.TabIndex = 1;
+            this.lblTenForm.Text = "Dasboard";
+            // 
+            // TaiKhoanTimer
+            // 
+            this.TaiKhoanTimer.Interval = 3;
+            this.TaiKhoanTimer.Tick += new System.EventHandler(this.TaiKhoanTimer_Tick);
+            // 
+            // HR_ui_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pnNen);
-            this.Controls.Add(this.Sidebar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlSidebar);
+            this.Controls.Add(this.pnlThanhTimKiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Sidebar_demo";
+            this.Name = "HR_ui_Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sidebar_demo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
+            this.pnlThanhTimKiem.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnMode.ResumeLayout(false);
-            this.pnMode.PerformLayout();
-            this.pnCaiDat.ResumeLayout(false);
-            this.pnCaiDat.PerformLayout();
-            this.pnMainMenu.ResumeLayout(false);
-            this.pnMainMenu.PerformLayout();
-            this.Sidebar.ResumeLayout(false);
-            this.pnNen.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlCaiDat.ResumeLayout(false);
+            this.pnlCaiDat.PerformLayout();
+            this.pnlMainMenu.ResumeLayout(false);
+            this.pnlMainMenu.PerformLayout();
+            this.pnlSidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.pnNen.ResumeLayout(false);
+            this.pnlHienThi.ResumeLayout(false);
+            this.pnlTaiKhoan.ResumeLayout(false);
+            this.pnlShowTaiKhoan.ResumeLayout(false);
+            this.pnlShowTaiKhoan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).EndInit();
+            this.pnlTenForm.ResumeLayout(false);
+            this.pnlTenForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlThanhTimKiem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblHRMs;
         private System.Windows.Forms.Label lblSunshine;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnMainMenu;
-        private System.Windows.Forms.Panel pnCaiDat;
-        private System.Windows.Forms.Panel pnMode;
+        private System.Windows.Forms.Panel pnlMainMenu;
+        private System.Windows.Forms.Panel pnlCaiDat;
         private System.Windows.Forms.Label lblMainMenu;
-        private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.Label lblCaiDat;
-        private System.Windows.Forms.FlowLayoutPanel Sidebar;
+        private System.Windows.Forms.FlowLayoutPanel pnlSidebar;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnTuyendung;
         private System.Windows.Forms.Button btnBaoCao;
@@ -524,19 +650,29 @@
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnLich;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Timer SidebarTransition;
+        private System.Windows.Forms.Timer SidebarTransitionTimer;
         private System.Windows.Forms.Button btnHam;
         private System.Windows.Forms.Panel pnNen;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel pnlTenForm;
+        private System.Windows.Forms.Label lblTenForm;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel pnlHienThi;
+        private System.Windows.Forms.Timer TaiKhoanTimer;
+        private System.Windows.Forms.Panel pnlTaiKhoan;
+        private System.Windows.Forms.Panel pnlShowTaiKhoan;
+        private System.Windows.Forms.Button btnXemTacVuKhac;
+        private RoundPicture roundPicture1;
+        private System.Windows.Forms.Button btnThongBao;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label lblUername;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
