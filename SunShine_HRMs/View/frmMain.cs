@@ -14,7 +14,6 @@ namespace SunShine_HRMs
     {
 
         bool SidebarExpand;
-        bool HomeCollapsed;
         public frmMain()
         {
             InitializeComponent();
@@ -25,7 +24,8 @@ namespace SunShine_HRMs
         {
             if (SidebarExpand)
             {
-                pnlSidebar.Width -= 2;  
+                pnlSidebar.Width -= 2; 
+                
                 if (pnlSidebar.Width <= 60)
                 {
                     SidebarExpand = false;
@@ -40,14 +40,13 @@ namespace SunShine_HRMs
                     //pnMode 
                     //pnMainMenu 
                 }
-
-                lblCaiDat.Visible = false;
                 lblMainMenu.Visible = false;
+                pnlLogo.Visible = false;
             }
             else
             {
                 pnlSidebar.Width += 2;
-                if (pnlSidebar.Width >= 183)
+                if (pnlSidebar.Width >= 164)
                 {
                     SidebarExpand = true;
                     SidebarTransitionTimer.Stop();
@@ -55,14 +54,14 @@ namespace SunShine_HRMs
                     //btnDashboard 
                     //btnBaoCao 
                     //btnCongDong 
-                    ////btnLich 
-                    ////btnThongKe 
+                    //btnLich 
+                    //btnThongKe 
                     //pnCaiDat 
                     //pnMode 
                     //pnMainMenu 
                 }
-                lblCaiDat.Visible = true;
                 lblMainMenu.Visible = true;
+                pnlLogo.Visible = true;
             }
         }
 
@@ -71,6 +70,5 @@ namespace SunShine_HRMs
         {
             SidebarTransitionTimer.Start();
         }
-
     }
 }

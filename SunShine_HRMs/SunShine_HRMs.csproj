@@ -151,5 +151,20 @@
   <ItemGroup>
     <None Include="Resources\Password.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 167sEARCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 170THONGBAO.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
