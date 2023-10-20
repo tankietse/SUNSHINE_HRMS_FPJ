@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="View\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="View\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -59,16 +59,16 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="HR_ui_Main.cs">
+    <Compile Include="View\HR_ui_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HR_ui_Main.Designer.cs">
+    <Compile Include="View\HR_ui_Main.Designer.cs">
       <DependentUpon>HR_ui_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="RoundPicture.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="View\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -81,7 +81,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="HR_ui_Main.resx">
+    <EmbeddedResource Include="View\HR_ui_Main.resx">
       <DependentUpon>HR_ui_Main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
