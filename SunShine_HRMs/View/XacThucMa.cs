@@ -14,7 +14,7 @@ namespace SunShine_HRMs.View
     public partial class frmXacThucMa : Form
     {
         System.Timers.Timer t;
-        int m = 0, s = 7; bool guima=true;
+        int m = 0, s = 10; bool guima=true;
         public frmXacThucMa()
         {
             InitializeComponent();
@@ -22,6 +22,10 @@ namespace SunShine_HRMs.View
 
         private void XacThucMa_Load(object sender, EventArgs e)
         {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
             t = new System.Timers.Timer();
             t.Interval = 1000;
             t.Elapsed += OnTimeEvent;
@@ -39,14 +43,26 @@ namespace SunShine_HRMs.View
         private void btnGuiLaiMa_Click(object sender, EventArgs e)
         {
             guima = true;
-            s = 7;
+            s = 10;
             CaiDatChucNang();
             t.Start();
+            frmQuenMatKhau frm = new frmQuenMatKhau();
         }
 
         private void btnTiepTuc_Click(object sender, EventArgs e)
         {
-            frmDoiMatKhau frm = new frmDoiMatKhau();
+            if (txtNhapMa.Text == frmQuenMatKhau.randomMa.ma.ToString())
+            {
+                frmDoiMatKhau frm = new frmDoiMatKhau();
+                this.Hide();
+                frm.Show();
+            }
+            else MessageBox.Show("Mã không chính xác!");
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            frmQuenMatKhau frm = new frmQuenMatKhau();
             this.Hide();
             frm.Show();
         }
