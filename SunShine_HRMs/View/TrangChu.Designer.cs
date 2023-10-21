@@ -60,7 +60,6 @@
             this.pnlTaiKhoan = new System.Windows.Forms.Panel();
             this.pnlShowTaiKhoan = new System.Windows.Forms.Panel();
             this.btnXemTacVuKhac = new System.Windows.Forms.Button();
-            this.roundPicture1 = new SunShine_HRMs.RoundPicture();
             this.btnThongBao = new System.Windows.Forms.Button();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.lblUername = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pnlTenForm = new System.Windows.Forms.Panel();
             this.lblTenForm = new System.Windows.Forms.Label();
+            this.roundPicture1 = new SunShine_HRMs.RoundPicture();
             this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
             this.pnlThanhTimKiem.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,8 +87,8 @@
             this.pnlHienThi.SuspendLayout();
             this.pnlTaiKhoan.SuspendLayout();
             this.pnlShowTaiKhoan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).BeginInit();
             this.pnlTenForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlThanhTimKiem
@@ -100,7 +100,7 @@
             this.pnlThanhTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlThanhTimKiem.Location = new System.Drawing.Point(0, 0);
             this.pnlThanhTimKiem.Name = "pnlThanhTimKiem";
-            this.pnlThanhTimKiem.Size = new System.Drawing.Size(1904, 56);
+            this.pnlThanhTimKiem.Size = new System.Drawing.Size(1620, 56);
             this.pnlThanhTimKiem.TabIndex = 0;
             // 
             // btnHam
@@ -139,21 +139,21 @@
             // lblHRMs
             // 
             this.lblHRMs.AutoSize = true;
-            this.lblHRMs.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRMs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHRMs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(158)))), ((int)(((byte)(188)))));
             this.lblHRMs.Location = new System.Drawing.Point(106, 11);
             this.lblHRMs.Name = "lblHRMs";
-            this.lblHRMs.Size = new System.Drawing.Size(46, 17);
+            this.lblHRMs.Size = new System.Drawing.Size(50, 17);
             this.lblHRMs.TabIndex = 1;
             this.lblHRMs.Text = "HRMs";
             // 
             // lblSunshine
             // 
             this.lblSunshine.AutoSize = true;
-            this.lblSunshine.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSunshine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSunshine.Location = new System.Drawing.Point(43, 11);
             this.lblSunshine.Name = "lblSunshine";
-            this.lblSunshine.Size = new System.Drawing.Size(68, 17);
+            this.lblSunshine.Size = new System.Drawing.Size(75, 17);
             this.lblSunshine.TabIndex = 1;
             this.lblSunshine.Text = "Sunshine";
             // 
@@ -169,10 +169,10 @@
             // lblCaiDat
             // 
             this.lblCaiDat.AutoSize = true;
-            this.lblCaiDat.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaiDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCaiDat.Location = new System.Drawing.Point(-1, 0);
             this.lblCaiDat.Name = "lblCaiDat";
-            this.lblCaiDat.Size = new System.Drawing.Size(56, 18);
+            this.lblCaiDat.Size = new System.Drawing.Size(54, 18);
             this.lblCaiDat.TabIndex = 1;
             this.lblCaiDat.Text = "Cài đặt";
             // 
@@ -182,7 +182,7 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button6.Image = global::SunShine_HRMs.Properties.Resources.logout;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,10 +204,10 @@
             // lblMainMenu
             // 
             this.lblMainMenu.AutoSize = true;
-            this.lblMainMenu.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMainMenu.Location = new System.Drawing.Point(3, 14);
             this.lblMainMenu.Name = "lblMainMenu";
-            this.lblMainMenu.Size = new System.Drawing.Size(82, 18);
+            this.lblMainMenu.Size = new System.Drawing.Size(81, 18);
             this.lblMainMenu.TabIndex = 1;
             this.lblMainMenu.Text = "Main menu";
             // 
@@ -224,11 +224,11 @@
             this.pnlSidebar.Controls.Add(this.pnlCaiDat);
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnlSidebar.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlSidebar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlSidebar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 56);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(183, 985);
+            this.pnlSidebar.Size = new System.Drawing.Size(183, 864);
             this.pnlSidebar.TabIndex = 1;
             // 
             // panel5
@@ -245,7 +245,7 @@
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDashboard.Image = global::SunShine_HRMs.Properties.Resources.dashboard;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -271,7 +271,7 @@
             this.btnTuyendung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTuyendung.FlatAppearance.BorderSize = 0;
             this.btnTuyendung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuyendung.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuyendung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuyendung.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTuyendung.Image = global::SunShine_HRMs.Properties.Resources.Viec;
             this.btnTuyendung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -297,7 +297,7 @@
             this.btnLich.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLich.FlatAppearance.BorderSize = 0;
             this.btnLich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLich.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLich.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLich.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLich.Image = global::SunShine_HRMs.Properties.Resources.lich;
             this.btnLich.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -323,7 +323,7 @@
             this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThongKe.FlatAppearance.BorderSize = 0;
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnThongKe.Image = global::SunShine_HRMs.Properties.Resources.thongKe;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -349,7 +349,7 @@
             this.btnBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBaoCao.FlatAppearance.BorderSize = 0;
             this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaoCao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBaoCao.Image = global::SunShine_HRMs.Properties.Resources.bao_cao;
             this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -375,7 +375,7 @@
             this.btnCongDong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCongDong.FlatAppearance.BorderSize = 0;
             this.btnCongDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCongDong.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCongDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCongDong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCongDong.Image = global::SunShine_HRMs.Properties.Resources.CongDong;
             this.btnCongDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -401,7 +401,7 @@
             this.pnNen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnNen.Location = new System.Drawing.Point(183, 56);
             this.pnNen.Name = "pnNen";
-            this.pnNen.Size = new System.Drawing.Size(1721, 985);
+            this.pnNen.Size = new System.Drawing.Size(1437, 864);
             this.pnNen.TabIndex = 2;
             // 
             // pnlHienThi
@@ -410,7 +410,7 @@
             this.pnlHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHienThi.Location = new System.Drawing.Point(0, 40);
             this.pnlHienThi.Name = "pnlHienThi";
-            this.pnlHienThi.Size = new System.Drawing.Size(1721, 945);
+            this.pnlHienThi.Size = new System.Drawing.Size(1437, 824);
             this.pnlHienThi.TabIndex = 1;
             // 
             // pnlTaiKhoan
@@ -428,7 +428,6 @@
             // pnlShowTaiKhoan
             // 
             this.pnlShowTaiKhoan.Controls.Add(this.btnXemTacVuKhac);
-            this.pnlShowTaiKhoan.Controls.Add(this.roundPicture1);
             this.pnlShowTaiKhoan.Controls.Add(this.btnThongBao);
             this.pnlShowTaiKhoan.Controls.Add(this.lblChucVu);
             this.pnlShowTaiKhoan.Controls.Add(this.lblUername);
@@ -450,16 +449,6 @@
             this.btnXemTacVuKhac.UseVisualStyleBackColor = true;
             this.btnXemTacVuKhac.Click += new System.EventHandler(this.btnXemTacVuKhac_Click);
             // 
-            // roundPicture1
-            // 
-            this.roundPicture1.Image = ((System.Drawing.Image)(resources.GetObject("roundPicture1.Image")));
-            this.roundPicture1.Location = new System.Drawing.Point(37, 11);
-            this.roundPicture1.Name = "roundPicture1";
-            this.roundPicture1.Size = new System.Drawing.Size(36, 36);
-            this.roundPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundPicture1.TabIndex = 0;
-            this.roundPicture1.TabStop = false;
-            // 
             // btnThongBao
             // 
             this.btnThongBao.BackgroundImage = global::SunShine_HRMs.Properties.Resources.VectorThongBao;
@@ -475,21 +464,21 @@
             // lblChucVu
             // 
             this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChucVu.ForeColor = System.Drawing.Color.DarkGray;
             this.lblChucVu.Location = new System.Drawing.Point(79, 32);
             this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(44, 15);
+            this.lblChucVu.Size = new System.Drawing.Size(50, 16);
             this.lblChucVu.TabIndex = 1;
             this.lblChucVu.Text = "Admin";
             // 
             // lblUername
             // 
             this.lblUername.AutoSize = true;
-            this.lblUername.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUername.Location = new System.Drawing.Point(79, 14);
             this.lblUername.Name = "lblUername";
-            this.lblUername.Size = new System.Drawing.Size(61, 15);
+            this.lblUername.Size = new System.Drawing.Size(64, 16);
             this.lblUername.TabIndex = 1;
             this.lblUername.Text = "Tấn Kiệt";
             // 
@@ -569,18 +558,28 @@
             this.pnlTenForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTenForm.Location = new System.Drawing.Point(0, 0);
             this.pnlTenForm.Name = "pnlTenForm";
-            this.pnlTenForm.Size = new System.Drawing.Size(1721, 40);
+            this.pnlTenForm.Size = new System.Drawing.Size(1437, 40);
             this.pnlTenForm.TabIndex = 0;
             // 
             // lblTenForm
             // 
             this.lblTenForm.AutoSize = true;
-            this.lblTenForm.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenForm.Location = new System.Drawing.Point(3, 15);
             this.lblTenForm.Name = "lblTenForm";
-            this.lblTenForm.Size = new System.Drawing.Size(100, 23);
+            this.lblTenForm.Size = new System.Drawing.Size(99, 24);
             this.lblTenForm.TabIndex = 1;
             this.lblTenForm.Text = "Dasboard";
+            // 
+            // roundPicture1
+            // 
+            this.roundPicture1.Image = ((System.Drawing.Image)(resources.GetObject("roundPicture1.Image")));
+            this.roundPicture1.Location = new System.Drawing.Point(37, 11);
+            this.roundPicture1.Name = "roundPicture1";
+            this.roundPicture1.Size = new System.Drawing.Size(36, 36);
+            this.roundPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundPicture1.TabIndex = 0;
+            this.roundPicture1.TabStop = false;
             // 
             // TaiKhoanTimer
             // 
@@ -591,7 +590,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1620, 920);
             this.Controls.Add(this.pnNen);
             this.Controls.Add(this.pnlSidebar);
             this.Controls.Add(this.pnlThanhTimKiem);
@@ -624,9 +623,9 @@
             this.pnlTaiKhoan.ResumeLayout(false);
             this.pnlShowTaiKhoan.ResumeLayout(false);
             this.pnlShowTaiKhoan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).EndInit();
             this.pnlTenForm.ResumeLayout(false);
             this.pnlTenForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundPicture1)).EndInit();
             this.ResumeLayout(false);
 
         }
