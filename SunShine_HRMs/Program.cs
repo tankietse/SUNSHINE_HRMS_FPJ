@@ -16,9 +16,7 @@ namespace SunShine_HRMs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            Application.Run(new frmDangNhap());
-
+            Application.Run(new frmTrangChu());
         }
     }
 }

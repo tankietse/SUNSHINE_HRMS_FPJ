@@ -63,16 +63,6 @@ namespace SunShine_HRMs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
-            get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bao_cao {
             get {
                 object obj = ResourceManager.GetObject("bao_cao", resourceCulture);
@@ -213,16 +203,6 @@ namespace SunShine_HRMs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OTP {
-            get {
-                object obj = ResourceManager.GetObject("OTP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Password {
             get {
                 object obj = ResourceManager.GetObject("Password", resourceCulture);
@@ -233,24 +213,9 @@ namespace SunShine_HRMs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap phone {
+        internal static System.Drawing.Bitmap search_sm {
             get {
-                object obj = ResourceManager.GetObject("phone", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap phone1 {
-            get {
-                object obj = ResourceManager.GetObject("phone1", resourceCulture);
-
-        //Here>> internal static System.Drawing.Bitmap search_sm {
-            //Here>> get {
-                //Here>> object obj = ResourceManager.GetObject("search-sm", resourceCulture);
-
+                object obj = ResourceManager.GetObject("search-sm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
