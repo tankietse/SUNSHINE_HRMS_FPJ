@@ -17,17 +17,41 @@ namespace SunShine_HRMs.View
         {
             InitializeComponent();
         }
+
+        private void frmDoiMatKhau_Load(object sender, EventArgs e)
+        {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+        }
+
         HRMs dbcontext = new HRMs();
 
         private void txtTenDangNhap_Validating(object sender, CancelEventArgs e)
         {
             if(txtTenDangNhap.Text == "")
             {
-                e.Cancel =true;
-                txtTenDangNhap.Focus();
                 errorProvider.SetError(txtTenDangNhap, "Vui lòng nhập tên đăng nhập");
             }
         }
+
+        private void txtMatKhauMoi_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtMatKhauMoi.Text == "")
+            {
+                errorProvider.SetError(txtMatKhauMoi, "Vui lòng nhập mật khẩu mới");
+            }
+        }
+
+        private void txtXacnhanMatKhau_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtXacnhanMatKhau.Text == "")
+            {
+                errorProvider.SetError(txtXacnhanMatKhau, "Vui lòng xác nhận mật khẩu mới");
+            }
+        }
+
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
@@ -61,31 +85,12 @@ namespace SunShine_HRMs.View
             }
         }
 
-        private void txtMatKhauMoi_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtMatKhauMoi.Text == "")
-            {
-                e.Cancel = true;
-                txtMatKhauMoi.Focus();
-                errorProvider.SetError(txtMatKhauMoi, "Vui lòng nhập mật khẩu mới");
-            }
-        }
-
-        private void txtXacnhanMatKhau_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtXacnhanMatKhau.Text == "")
-            {
-                e.Cancel = true;
-                txtXacnhanMatKhau.Focus();
-                errorProvider.SetError(txtXacnhanMatKhau, "Vui lòng xác nhận mật khẩu mới");
-            }
-        }
-
         private void btnHuy_Click(object sender, EventArgs e)
         {
             frmDangNhap frm = new frmDangNhap();
             this.Hide();
             frm.Show();
         }
+
     }
 }

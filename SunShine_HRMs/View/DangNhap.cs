@@ -18,15 +18,37 @@ namespace SunShine_HRMs
         {
             InitializeComponent();
         }
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+        }
 
         HRMs dbcontext = new HRMs();
+
+        private void txtUsername_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                errorProvider.SetError(txtUsername, "Vui lòng nhập tên đăng nhập!");
+            }
+        }
+
+        private void txtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                errorProvider.SetError(txtPassword, "Vui lòng nhập mật khẩu!");
+            }
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtUsername.Text && p.MatKhau == txtPassword.Text);
             if(tk != null)
             {
-                MessageBox.Show("Đăng nhập thành công!");
                 HR_ui_Main frm = new HR_ui_Main();
                 this.Hide();
                 frm.Show();
@@ -35,6 +57,7 @@ namespace SunShine_HRMs
             {
                 MessageBox.Show("Sai thông tin đăng nhập");
             }
+
         }
 
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)
@@ -46,33 +69,12 @@ namespace SunShine_HRMs
             else
                 txtPassword.UseSystemPasswordChar = true;
         }
-
-        private void txtUsername_Validating(object sender, CancelEventArgs e)
-        {
-            TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtUsername.Text);
-            if (txtUsername.Text == "")
-            {
-                e.Cancel = true;
-                txtUsername.Focus();
-                errorProvider.SetError(txtUsername, "Vui lòng nhập tên đăng nhập!");
-            }
-        }
-
-        private void txtPassword_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                e.Cancel = true;
-                txtUsername.Focus();
-                errorProvider.SetError(txtUsername, "Vui lòng nhập mật khẩu!");
-            }
-        }
-
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
             frmQuenMatKhau frm = new frmQuenMatKhau();
             this.Hide();
             frm.Show();
         }
+
     }
 }
