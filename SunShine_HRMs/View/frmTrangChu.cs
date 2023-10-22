@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SunShine_HRMs.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,6 +70,14 @@ namespace SunShine_HRMs
         private void btnHam_Click(object sender, EventArgs e)
         {
             SidebarTransitionTimer.Start();
+        }
+
+        private void frmTrangChu_Load(object sender, EventArgs e)
+        {
+            frmTrangChinh frm = new frmTrangChinh();
+
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

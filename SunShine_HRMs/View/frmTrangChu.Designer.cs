@@ -30,14 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlThanhTimKiem = new System.Windows.Forms.Panel();
+            this.pnlSrearch = new System.Windows.Forms.Panel();
+            this.btnCaiDat = new System.Windows.Forms.Button();
+            this.btnHam = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHRMs = new System.Windows.Forms.Label();
             this.lblSunshine = new System.Windows.Forms.Label();
-            this.btnCaiDat = new System.Windows.Forms.Button();
-            this.btnHam = new System.Windows.Forms.Button();
             this.pnlMainMenu = new System.Windows.Forms.Panel();
             this.lblMainMenu = new System.Windows.Forms.Label();
             this.pnlSidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -55,11 +57,11 @@
             this.btnCongDong = new System.Windows.Forms.Button();
             this.SidebarTransitionTimer = new System.Windows.Forms.Timer(this.components);
             this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
-            this.pnlSrearch = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.circularButton2 = new SunShine_HRMs.CircularButton();
             this.circularButton1 = new SunShine_HRMs.CircularButton();
             this.pnlThanhTimKiem.SuspendLayout();
+            this.pnlSrearch.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMainMenu.SuspendLayout();
@@ -70,8 +72,6 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.pnlSrearch.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlThanhTimKiem
@@ -87,10 +87,63 @@
             this.pnlThanhTimKiem.Size = new System.Drawing.Size(1920, 56);
             this.pnlThanhTimKiem.TabIndex = 0;
             // 
+            // pnlSrearch
+            // 
+            this.pnlSrearch.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSrearch.Controls.Add(this.btnCaiDat);
+            this.pnlSrearch.Controls.Add(this.btnHam);
+            this.pnlSrearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSrearch.Location = new System.Drawing.Point(148, 0);
+            this.pnlSrearch.Name = "pnlSrearch";
+            this.pnlSrearch.Size = new System.Drawing.Size(1418, 54);
+            this.pnlSrearch.TabIndex = 4;
+            // 
+            // btnCaiDat
+            // 
+            this.btnCaiDat.BackColor = System.Drawing.Color.Transparent;
+            this.btnCaiDat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCaiDat.FlatAppearance.BorderSize = 0;
+            this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaiDat.Image = global::SunShine_HRMs.Properties.Resources.Frame_167sEARCH;
+            this.btnCaiDat.Location = new System.Drawing.Point(46, 11);
+            this.btnCaiDat.Name = "btnCaiDat";
+            this.btnCaiDat.Size = new System.Drawing.Size(320, 33);
+            this.btnCaiDat.TabIndex = 3;
+            this.btnCaiDat.UseVisualStyleBackColor = false;
+            // 
+            // btnHam
+            // 
+            this.btnHam.BackColor = System.Drawing.Color.Transparent;
+            this.btnHam.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHam.FlatAppearance.BorderSize = 0;
+            this.btnHam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHam.Image = global::SunShine_HRMs.Properties.Resources.menu24;
+            this.btnHam.Location = new System.Drawing.Point(14, 10);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(20, 33);
+            this.btnHam.TabIndex = 3;
+            this.btnHam.UseVisualStyleBackColor = false;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.circularButton2);
+            this.panel3.Controls.Add(this.circularButton1);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1566, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(352, 54);
+            this.panel3.TabIndex = 4;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::SunShine_HRMs.Properties.Resources.Frame_170THONGBAO;
@@ -104,6 +157,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::SunShine_HRMs.Properties.Resources.Settig;
@@ -154,33 +208,6 @@
             this.lblSunshine.Size = new System.Drawing.Size(68, 17);
             this.lblSunshine.TabIndex = 1;
             this.lblSunshine.Text = "Sunshine";
-            // 
-            // btnCaiDat
-            // 
-            this.btnCaiDat.BackColor = System.Drawing.Color.Transparent;
-            this.btnCaiDat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCaiDat.FlatAppearance.BorderSize = 0;
-            this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaiDat.Image = global::SunShine_HRMs.Properties.Resources.Frame_167sEARCH;
-            this.btnCaiDat.Location = new System.Drawing.Point(46, 11);
-            this.btnCaiDat.Name = "btnCaiDat";
-            this.btnCaiDat.Size = new System.Drawing.Size(320, 33);
-            this.btnCaiDat.TabIndex = 3;
-            this.btnCaiDat.UseVisualStyleBackColor = false;
-            // 
-            // btnHam
-            // 
-            this.btnHam.BackColor = System.Drawing.Color.Transparent;
-            this.btnHam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHam.FlatAppearance.BorderSize = 0;
-            this.btnHam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHam.Image = global::SunShine_HRMs.Properties.Resources.menu24;
-            this.btnHam.Location = new System.Drawing.Point(14, 10);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(20, 33);
-            this.btnHam.TabIndex = 3;
-            this.btnHam.UseVisualStyleBackColor = false;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // pnlMainMenu
             // 
@@ -385,36 +412,13 @@
             // 
             this.TaiKhoanTimer.Interval = 3;
             // 
-            // pnlSrearch
-            // 
-            this.pnlSrearch.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSrearch.Controls.Add(this.btnCaiDat);
-            this.pnlSrearch.Controls.Add(this.btnHam);
-            this.pnlSrearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSrearch.Location = new System.Drawing.Point(148, 0);
-            this.pnlSrearch.Name = "pnlSrearch";
-            this.pnlSrearch.Size = new System.Drawing.Size(1418, 54);
-            this.pnlSrearch.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.circularButton2);
-            this.panel3.Controls.Add(this.circularButton1);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1566, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(352, 54);
-            this.panel3.TabIndex = 4;
-            // 
             // circularButton2
             // 
             this.circularButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.circularButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.circularButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circularButton2.Image = global::SunShine_HRMs.Properties.Resources.help;
-            this.circularButton2.Location = new System.Drawing.Point(268, 14);
+            this.circularButton2.Location = new System.Drawing.Point(268, 16);
             this.circularButton2.Name = "circularButton2";
             this.circularButton2.Size = new System.Drawing.Size(22, 22);
             this.circularButton2.TabIndex = 5;
@@ -424,6 +428,7 @@
             // 
             this.circularButton1.BackColor = System.Drawing.Color.Black;
             this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circularButton1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.circularButton1.Location = new System.Drawing.Point(314, 10);
@@ -433,24 +438,28 @@
             this.circularButton1.TabIndex = 3;
             this.circularButton1.UseVisualStyleBackColor = false;
             // 
-            // frmMain
+            // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.pnlSidebar);
             this.Controls.Add(this.pnlThanhTimKiem);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmMain";
+            this.Name = "frmTrangChu";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sidebar_demo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmTrangChu_Load);
             this.pnlThanhTimKiem.ResumeLayout(false);
+            this.pnlSrearch.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -463,8 +472,6 @@
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            this.pnlSrearch.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
