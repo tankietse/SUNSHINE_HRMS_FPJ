@@ -133,9 +133,10 @@
   <data name="thongKe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thongKe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Frame 167sEARCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Frame 167sEARCH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
+  //Here>> <data name="Frame 167sEARCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    //Here>> <value>..\Resources\Frame 167sEARCH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  //Here>> </data>
   <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,14 +164,25 @@
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search-sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Settig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
+  <data name="phone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
+ //Here>>  <data name="search-sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    //Here>> <value>..\Resources\search-sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  //Here>> </data>
+  //Here>> <data name="Settig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    //Here>> <value>..\Resources\Settig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
   </data>
   <data name="Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CongDong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CongDong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CongDong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CongDong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,10 +193,18 @@
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="management24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\management24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
+  <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Frame 170THONGBAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Frame 170THONGBAO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OTP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OTP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
+  //Here>> <data name="management24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    //Here>> <value>..\Resources\management24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  //Here>> </data>
+  //Here>> <data name="Frame 170THONGBAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    //Here>> <value>..\Resources\Frame 170THONGBAO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+
   </data>
 </root>
