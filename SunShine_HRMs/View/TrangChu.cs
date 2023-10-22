@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace SunShine_HRMs
 {
-    public partial class HR_ui_Main : Form
+    public partial class frmTrangChu : Form
     {
 
         bool SidebarExpand;
         bool HomeCollapsed;
-        public HR_ui_Main()
+        public frmTrangChu()
         {
             InitializeComponent();
         }

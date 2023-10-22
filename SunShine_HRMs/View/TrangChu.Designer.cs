@@ -1,6 +1,6 @@
 ﻿namespace SunShine_HRMs
 {
-    partial class HR_ui_Main
+    partial class frmTrangChu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HR_ui_Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             this.pnlThanhTimKiem = new System.Windows.Forms.Panel();
             this.btnHam = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -69,8 +69,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pnlTenForm = new System.Windows.Forms.Panel();
             this.lblTenForm = new System.Windows.Forms.Label();
-            this.roundPicture1 = new SunShine_HRMs.RoundPicture();
             this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
+            this.roundPicture1 = new SunShine_HRMs.RoundPicture();
             this.pnlThanhTimKiem.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -571,6 +571,11 @@
             this.lblTenForm.TabIndex = 1;
             this.lblTenForm.Text = "Dasboard";
             // 
+            // TaiKhoanTimer
+            // 
+            this.TaiKhoanTimer.Interval = 3;
+            this.TaiKhoanTimer.Tick += new System.EventHandler(this.TaiKhoanTimer_Tick);
+            // 
             // roundPicture1
             // 
             this.roundPicture1.Image = ((System.Drawing.Image)(resources.GetObject("roundPicture1.Image")));
@@ -581,12 +586,7 @@
             this.roundPicture1.TabIndex = 0;
             this.roundPicture1.TabStop = false;
             // 
-            // TaiKhoanTimer
-            // 
-            this.TaiKhoanTimer.Interval = 3;
-            this.TaiKhoanTimer.Tick += new System.EventHandler(this.TaiKhoanTimer_Tick);
-            // 
-            // HR_ui_Main
+            // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -598,7 +598,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "HR_ui_Main";
+            this.Name = "frmTrangChu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sidebar_demo";
