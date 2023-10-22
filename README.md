@@ -1,2 +1,3 @@
 # SunShine_HRMs
-Tạo các nhánh khác để phát triển. KHÔNG làm trên nhánh Main
+Tạo các nhánh khác để phát triển. KHÔNG làm trên nhánh Master
+
