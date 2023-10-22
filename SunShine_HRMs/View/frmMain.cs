@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SunShine_HRMs.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SunShine_HRMs.Model;
 
 namespace SunShine_HRMs
 {
@@ -69,6 +71,12 @@ namespace SunShine_HRMs
         private void btnHam_Click(object sender, EventArgs e)
         {
             SidebarTransitionTimer.Start();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ThongTinTaiKhoan form = new ThongTinTaiKhoan();
+            form.Show();
         }
     }
 }
