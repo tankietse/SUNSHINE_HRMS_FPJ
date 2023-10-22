@@ -1,6 +1,6 @@
 ﻿namespace SunShine_HRMs
 {
-    partial class frmMain
+    partial class frmTrangChu
     {
         /// <summary>
         /// Required designer variable.
