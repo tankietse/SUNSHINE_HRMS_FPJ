@@ -1,4 +1,5 @@
-﻿using SunShine_HRMs.View;
+﻿//using SunShine_HRMs.View;
+using SunShine_HRMs.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace SunShine_HRMs
 {
     public partial class frmTrangChu : Form
     {
-
+        private frmTrangChinh frm = null;
         bool SidebarExpand;
         public frmTrangChu()
         {
@@ -74,10 +75,22 @@ namespace SunShine_HRMs
 
         private void frmTrangChu_Load(object sender, EventArgs e)
         {
-            frmTrangChinh frm = new frmTrangChinh();
+            btnDashboard_Click(sender,e);
+        }
 
-            frm.MdiParent = this;
-            frm.Show();
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            if (frm == null || frm.IsDisposed)
+            {
+                frm = new frmTrangChinh();
+                frm.WindowState = FormWindowState.Maximized;
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                frm.BringToFront();
+            }
         }
     }
 }
