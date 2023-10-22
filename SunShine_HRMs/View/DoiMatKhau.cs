@@ -27,12 +27,14 @@ namespace SunShine_HRMs.View
         }
 
         HRMs dbcontext = new HRMs();
+        bool kiemtra = true;
 
         private void txtTenDangNhap_Validating(object sender, CancelEventArgs e)
         {
             if(txtTenDangNhap.Text == "")
             {
                 errorProvider.SetError(txtTenDangNhap, "Vui lòng nhập tên đăng nhập");
+                kiemtra = false;
             }
         }
 
@@ -41,6 +43,7 @@ namespace SunShine_HRMs.View
             if (txtMatKhauMoi.Text == "")
             {
                 errorProvider.SetError(txtMatKhauMoi, "Vui lòng nhập mật khẩu mới");
+                kiemtra = false;
             }
         }
 
@@ -49,13 +52,14 @@ namespace SunShine_HRMs.View
             if (txtXacnhanMatKhau.Text == "")
             {
                 errorProvider.SetError(txtXacnhanMatKhau, "Vui lòng xác nhận mật khẩu mới");
+                kiemtra = false;
             }
         }
 
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
-            if (KiemTraMatKhau() == true)
+            if (KiemTraMatKhau() == true && kiemtra == true)
             {
                 TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtTenDangNhap.Text);
                 if (tk == null)

@@ -14,6 +14,7 @@ namespace SunShine_HRMs
 {
     public partial class frmDangNhap : Form
     {
+
         public frmDangNhap()
         {
             InitializeComponent();
@@ -27,12 +28,14 @@ namespace SunShine_HRMs
         }
 
         HRMs dbcontext = new HRMs();
+        bool kiemtra = true;
 
         private void txtUsername_Validating(object sender, CancelEventArgs e)
         {
             if (txtUsername.Text == "")
             {
                 errorProvider.SetError(txtUsername, "Vui lòng nhập tên đăng nhập!");
+                kiemtra = false;
             }
         }
 
@@ -41,23 +44,26 @@ namespace SunShine_HRMs
             if (txtPassword.Text == "")
             {
                 errorProvider.SetError(txtPassword, "Vui lòng nhập mật khẩu!");
+                kiemtra = false;
             }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtUsername.Text && p.MatKhau == txtPassword.Text);
-            if(tk != null)
+            if (kiemtra == true)
             {
-                HR_ui_Main frm = new HR_ui_Main();
-                this.Hide();
-                frm.Show();
+                TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtUsername.Text && p.MatKhau == txtPassword.Text);
+                if (tk != null)
+                {
+                    HR_ui_Main frm = new HR_ui_Main();
+                    this.Hide();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai thông tin đăng nhập");
+                }
             }
-            else
-            {
-                MessageBox.Show("Sai thông tin đăng nhập");
-            }
-
         }
 
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)

@@ -57,7 +57,11 @@ namespace SunShine_HRMs.View
                 this.Hide();
                 frm.Show();
             }
-            else MessageBox.Show("Mã không chính xác!");
+            else
+            {
+                MessageBox.Show("Mã không chính xác!");
+                btnTiepTuc.Enabled = false;
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
