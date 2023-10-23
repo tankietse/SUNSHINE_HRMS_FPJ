@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SunShine_HRMs.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace SunShine_HRMs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTrangChu());
+            Application.Run(new frmTuyenDung());
         }
     }
 }

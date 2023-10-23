@@ -252,7 +252,7 @@
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(140, 31);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "             Dashboard";
+            this.btnDashboard.Text = "             Trang chính";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
